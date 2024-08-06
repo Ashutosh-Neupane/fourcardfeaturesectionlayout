@@ -1,0 +1,88 @@
+:root {
+  --main-font: "Montserrat", sans-serif;
+  --base-margin: 0;
+  --base-padding: 0;
+}
+body {
+  margin: var(--base-margin);
+  padding: var(--base-padding);
+  font-family: var(--main-font);
+  min-height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+h1,
+h2,h3 {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1rem;
+}
+.header {
+  margin: 0 auto;
+  text-align: center;
+  color: #777575;
+}
+h2 {
+  font: bolder;
+  color: #333;
+}
+.header > h1,
+p {
+  font-weight: 100;
+}
+.card {
+  margin: 1rem;
+  border-top: 6px solid;
+  padding:2rem;
+  border-radius: 0.5rem;
+  display:flex;
+  flex-direction: column;
+  box-shadow: 0.3rem 0.3rem 0.8rem rgba(123, 123, 255, 0.3);
+}
+
+.card>p{
+    font-weight: lighter;
+    color:#777575;
+    font-size:1rem
+}
+h3{
+    font-size:1.2rem;
+}
+img{
+    align-self: flex-end;
+}
+.supervisor {
+  border-color: hsl(212, 86%, 64%);
+}
+.team-builder {
+  border-color: hsl(0, 78%, 62%);
+}
+.karma {
+  border-color: hsl(180, 62%, 55%);
+}
+.calculator {
+  border-color: hsl(34, 97%, 64%);
+}
+footer {
+  text-align: center;
+  font-size: .8rem;
+}
+@media screen and (min-width:800px) {
+    .card-grid{
+        display:flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .karma,.calculator,.team-builder,.supervisor{
+        height:15rem;
+    }
+
+    
+}
